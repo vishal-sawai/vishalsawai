@@ -24,7 +24,18 @@
 
     <!--JavaScript-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="javascript.js"></script>
+    <script>
+    
+        $(document).ready(function () {
+    $(".navbar-brand").mouseenter(function () {
+        $(".n").show();
+    });$(".navbar-brand").mouseleave(function () {
+        $(".n").hide();
+    });
+
+});
+
+    </script>
 
     <link rel="stylesheet" media="screen and (min-width: 300px) and (max-width:926px)" href="responsive.css" />
     <title>Vishal Sawai</title>
