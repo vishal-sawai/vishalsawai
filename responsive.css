@@ -1,0 +1,26 @@
+.home{
+    background: url(./img/m.jpg)no-repeat center center/cover;
+}
+
+.my-name{
+    top: 70%;
+    width: 100%;
+    left: 0;
+}
+.my-name h1{
+    font-size: 95px;
+}
+.contact h1{
+    font-size: 50px;
+}
+.d-block{
+    font-size: 46px;
+}
+.about-title{
+    font-size: 89px;
+    top: -32px;
+    position: relative;
+}
+.br{ 
+    display: none;
+}
