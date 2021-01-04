@@ -1,0 +1,134 @@
+@keyframes abomination1 {
+    0% {
+      content: "P";
+    }
+    4% {
+      content: "Pr";
+    }
+    8% {
+      content: "Pro";
+    }
+    12% {
+      content: "Prog";
+    }
+    16% {
+      content: "Progr";
+    }
+    20% {
+      content: "Progra";
+    }
+    24% {
+      content: "Program";
+    }
+    28% {
+      content: "Programm";
+    }
+    32% {
+      content: "Programme";
+    }
+    36% {
+      content: "Programmer";
+    }
+    38%{
+      content: "";
+    }
+    40% {
+      content: "T";
+    }
+    44% {
+      content: "Te";
+    }
+    48% {
+      content: "Tec";
+    }
+    52% {
+      content: "Tech";
+    }
+    56% {
+      content: "Tech E";
+    }
+    60% {
+      content: "Tech En";
+    }
+    64% {
+      content: "Tech Ent";
+    }
+    68% {
+      content: "Tech Enth";
+    }
+    72% {
+      content: "Tech Enthu";
+    }
+    76% {
+      content: "Tech Enthus";
+    }
+    80% {
+      content: "Tech Enthusia";
+    }
+    84% {
+      content: "Tech Enthusias";
+    }
+    88% {
+      content: "Tech Enthusiast";
+    }
+    100%{
+      content: "";
+    }
+  }
+  
+  @keyframes html{
+    0%{
+     width: 3%;
+    }
+    100%{
+      width: 90%;
+    }
+  }
+  @keyframes css{
+    0%{
+     width: 3%;
+    }
+    100%{
+      width: 70%;
+    }
+  }
+  @keyframes js{
+    0%{
+     width: 3%;
+    }
+    100%{
+      width: 50%;
+    }
+  }
+  @keyframes jquery{
+    0%{
+     width: 3%;
+    }
+    100%{
+      width: 60%;
+    }
+  }
+  @keyframes c{
+    0%{
+     width: 3%;
+    }
+    100%{
+      width: 80%;
+    }
+  }
+  @keyframes cpp{
+    0%{
+     width: 3%;
+    }
+    100%{
+      width: 60%;
+    }
+  }
+  @keyframes python{
+    0%{
+     width: 3%;
+    }
+    100%{
+      width: 30%;
+    }
+  }
