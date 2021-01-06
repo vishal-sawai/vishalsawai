@@ -38,10 +38,10 @@
     #home{
         background: url(img/mobile.jpeg)no-repeat center center/cover;
     }
-    .my-name{
+   .my-name{
         left: 5%;
-        font-size: 25px;
-        bottom: 25%;
+        font-size: 22px;
+        bottom: 5%;
     }
     .skills {
         padding-top: 5px;
