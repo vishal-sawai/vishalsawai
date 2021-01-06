@@ -31,7 +31,7 @@ function storeData(e) {
          message:message
      })
      .then(function() {
-         alert('Thank you!  ' + name + " 🙏");
+         alert('Thank you!  ' + name + ' 🙏');
          document.getElementById('contactForm').reset();
      })
      .catch(function(error) {
