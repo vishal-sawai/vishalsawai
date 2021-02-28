@@ -117,19 +117,19 @@ nav ul li a:hover{
   animation: html 3s linear 1;
 }
 .css {
-  width: 70%; 
+  width: 80%; 
   background-color: darkred; 
   border-radius: 20px;
   animation: css 3s linear 1;
 }
 .js {
-  width: 50%; 
+  width: 70%; 
   background-color: grey; 
   border-radius: 20px;
   animation: js 3s linear 1;
 }
 .jquery {
-  width: 60%; 
+  width: 80%; 
   background-color: yellowgreen; 
   border-radius: 20px;
   animation: jquery 3s linear 1;
@@ -141,7 +141,7 @@ nav ul li a:hover{
   animation: c 3s linear 1;
 }
 .cpp {
-  width: 70%; 
+  width: 80%; 
   background-color: forestgreen; 
   border-radius: 20px;
   animation: cpp 3s linear 1;

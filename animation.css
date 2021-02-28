@@ -89,7 +89,7 @@
      width: 3%;
     }
     100%{
-      width: 70%;
+      width: 80%;
     }
   }
   @keyframes js{
@@ -97,7 +97,7 @@
      width: 3%;
     }
     100%{
-      width: 50%;
+      width: 70%;
     }
   }
   @keyframes jquery{
@@ -105,7 +105,7 @@
      width: 3%;
     }
     100%{
-      width: 60%;
+      width: 80%;
     }
   }
   @keyframes c{
@@ -121,7 +121,7 @@
      width: 3%;
     }
     100%{
-      width: 60%;
+      width: 80%;
     }
   }
   @keyframes python{
