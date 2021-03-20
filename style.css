@@ -1,101 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
+
 /* navbar */
-.container{
-    width: 100%;
+
+.container {
+  width: 100%;
 }
-.navbar{
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 70px;
-    align-items: center;
-    background-color:rgb(6, 130, 179);
-    z-index: 1;
+
+.navbar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  background-color: rgb(6, 130, 179);
+  z-index: 1;
 }
- #menu-icon{
-    cursor: pointer;
-    display: none; 
-} 
-nav{
-    flex: 1;
-    text-align: right;
+
+#menu-icon {
+  cursor: pointer;
+  display: none;
 }
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 30px;
+
+nav {
+  flex: 1;
+  text-align: right;
 }
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
 }
-nav ul li a:hover{
-    color: 	rgb(102, 0, 0)
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
 }
-.navicon{
+
+nav ul li a:hover {
+  color: rgb(102, 0, 0)
+}
+
+.navicon {
   border: 2px solid black;
   height: 50px;
-  border-radius:100px;
+  border-radius: 100px;
   margin-left: 4%;
   cursor: pointer;
 }
-.vi{
+
+.vi {
   font-size: 30px;
   color: white;
-  border-bottom:solid 5px white;
+  border-bottom: solid 5px white;
   display: none;
-}
-.m:hover{
-  border-bottom:solid 2px white;
 }
 
 /* home section */
-#home{
-    background: url(img/edit1.jpg)no-repeat center center/cover;
-    height: 100vh;
-    background-attachment: fixed;
+
+#home {
+  background: url(img/edit1.jpg)no-repeat center center/cover;
+  height: 100vh;
+  background-attachment: fixed;
 }
-.my-name{
-    position: absolute;
-    color: white;
-    right: 15%;
-    font-size: 50px;
-    bottom: 39%;
+
+.my-name {
+  position: absolute;
+  color: white;
+  right: 15%;
+  font-size: 50px;
+  bottom: 39%;
 }
-#text:after{
+.pname{
+  display: none;
+}
+
+#text:after {
   font-family: 'Crete Round', serif;
   content: "";
   animation: abomination1 7.5s linear infinite;
-  animation-fill-mode: forwards;    
+  animation-fill-mode: forwards;
 }
+
 /* skill */
-#skill{
-  background-color:white;
+
+#skill {
+  background-color: white;
 }
-.ms{
+
+.ms {
   text-align: center;
   font-size: 60px;
   color: brown;
   margin-top: 20px;
   font-family: 'Barrio', cursive;
 }
+
 .prog {
   width: 100%;
-  background-color:black;
+  background-color: black;
   border-radius: 20px;
-  margin: 10px 0px;  
-  font-weight: bolder;  
-  }
-.lang{
+  margin: 10px 0px;
+  font-weight: bolder;
+}
+
+.lang {
   margin: 0px 15%;
 }
+
 .skills {
   text-align: right;
   padding-top: 10px;
@@ -103,125 +122,122 @@ nav ul li a:hover{
   color: white;
   padding-right: 5px;
 }
-.iconp{
-  height:30px;
+
+.iconp {
+  height: 30px;
 }
-#skill p{
-    font-size: 43px;
+
+#skill p {
+  font-size: 43px;
 }
 
 .html {
-  width: 90%; 
-  background-color: blue; 
+  width: 90%;
+  background-color: blue;
   border-radius: 20px;
   animation: html 3s linear 1;
 }
+
 .css {
-  width: 80%; 
-  background-color: darkred; 
+  width: 80%;
+  background-color: darkred;
   border-radius: 20px;
   animation: css 3s linear 1;
 }
+
 .js {
-  width: 70%; 
-  background-color: grey; 
+  width: 70%;
+  background-color: grey;
   border-radius: 20px;
   animation: js 3s linear 1;
 }
+
 .jquery {
-  width: 80%; 
-  background-color: yellowgreen; 
+  width: 80%;
+  background-color: yellowgreen;
   border-radius: 20px;
   animation: jquery 3s linear 1;
 }
+
 .c {
-  width: 80%; 
-  background-color:  deepskyblue; 
+  width: 80%;
+  background-color: deepskyblue;
   border-radius: 20px;
   animation: c 3s linear 1;
 }
+
 .cpp {
-  width: 80%; 
-  background-color: forestgreen; 
+  width: 80%;
+  background-color: forestgreen;
   border-radius: 20px;
   animation: cpp 3s linear 1;
 }
+
 .python {
-  width: 30%; 
-  background-color: rgba(255, 255, 0, 0.815); 
+  width: 30%;
+  background-color: rgba(255, 255, 0, 0.815);
   border-radius: 20px;
   animation: python 3s linear 1;
 }
+
 /* about */
-#about{
-  height: 100vh;
+
+#about {
+  display: flex;
+  margin: auto;
 }
-.about{
+
+.about {
   font-family: 'Barrio', cursive;
-  margin-top: 5%;
+  margin-top: 50px;
   font-size: 60px;
   text-align: center;
 }
-.am{
+
+.am {
   display: flex;
-  margin-top: 5%;
+  margin: auto;
+  margin-top: 50px;
 }
-.im{
-  width: 20%;
-  margin-left: 18%;
-}
-.border{
-      position: absolute;
-      width: 306px;
-      height: 386px;
-      border: 5px solid rgb(6, 130, 179);
-      margin-left: 18px;
-      margin-top: 18px;
-      z-index: -1;
-}
-.im>img{
-  height: 100%;
-  width: 100%;
+.im>img {
+  height: 400px;
+  width: 350px;
   border: 1px solid black;
 }
-.im>img:hover{
-  margin-left: 10px;
-  margin-top: 6px;
-  transition: all 0.5s;
-}
-.info{
+.info {
   justify-content: center;
-  margin-left: 3%;
-  height: 206px;
+  margin-left: 30px;
+  /* height: 206px; */
   padding: 88px 0px;
 }
-.para{
+
+.para {
   font-size: 25px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 /* font icon */
+.follow{
+  width: 251px;
+}
 .fa {
-  font-size: 30px;
-  width: 54px;
-  height: 20px;
+  width: 45px;
+  height: 13px;
   text-align: center;
   text-decoration: none;
-  padding: 15px 0;
+  padding: 17px 1px;
+  margin: auto;
 }
 
 .fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
+  opacity: 0.7;
 }
 
 .fa-twitter {
   background: #55ACEE;
   color: white;
 }
+
 .fa-linkedin {
   background: #007bb5;
   color: white;
@@ -236,57 +252,67 @@ nav ul li a:hover{
   background: #125688;
   color: white;
 }
-.fa-github{
+
+.fa-github {
   color: white;
   background-color: black;
 }
 
-.follow{
-  padding-top: 20px;
-text-align: center;
+.follow {
+  margin-top: 20px;
 }
-.follow a{
+
+.follow a {
   border-radius: 50px;
 }
+
 /* contact */
 
-.con{
+.con {
   font-family: 'Barrio', cursive;
-    margin-top: -0.6%;
-    font-size: 60px;
+  margin-top: 50px;
+  font-size: 60px;
 }
-.f{
- width: 30%;
+
+.f {
+  width: 500px;
 }
-.in,.msg{
+
+ .in, .msg {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 16px;
   padding-left: 5px;
+  outline: none;
 }
-label{
+
+label {
   float: left;
   font-size: 25px;
   margin-bottom: 4px;
 }
-.send{
+
+.send {
   font-size: 25px;
   border-radius: 5px;
-  background-color: rgb(6,130,179);
+  background-color: rgb(6, 130, 179);
   color: white;
   border: none;
   width: 100%;
   padding: 6px 70px;
   cursor: pointer;
 }
-.send:hover{
-  background-color:rgb(241,57,81);
+
+.send:hover {
+  background-color: rgb(241, 57, 81);
 }
-.f > div{
+
+.f>div {
   margin: 10px 0px;
 }
-footer{
+
+ footer {
   text-align: center;
   color: white;
   font-size: 20px;

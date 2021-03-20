@@ -1,262 +1,130 @@
-@media only screen and (max-width:1024px){
-    .navbar{
-        height: 40px;
-    }
-    nav ul{
-        width: 100%;
-        background: linear-gradient(#ff54a2,#ff575a);
-        position: absolute;
-        top: 35px;
-        right: 0;
-        z-index: 2;
-    }
-    .vi {
-      font-size: 15px;
-    }
-    nav ul li{
-        display: block;
-        margin-top: 10px;
-    }
-    nav ul li a{
-        color:#fff;
-        font-size: 14px;
-    }
-    .m:hover{
-      border-bottom:none;
-    }
-    #menu-icon{
-        display: block;
-    }
-    #menulist{
-      overflow: hidden;
-      transition: 0.5s;
-
-    }
-    .navicon{
-        height: 30px;
-      }
-    #home{
-        background: url(img/mobile.jpeg)no-repeat center center/cover;
-    }
-   .my-name{
-        left: 8%;
-        font-size: 25px;
-        bottom: 5%;
-    }
-    .skills {
-        padding-top: 5px;
-        padding-bottom: 5px;
-      }
-      .iconp{
-        height:20px;
-      }
-      .lang{
-        margin: 0px 4%;
-      }
-      #skill p{
-          font-size: 30px;    
-      }
-      .ms{
-        font-size: 60px;
-        margin-bottom: 26px;
-        margin-top: 5%;
-      }
-      #about{
-        height: 70vh;
-    }
-    .about{
-      margin-top: 10%;
-      font-size: 60px;
-    }
-    .am{
-        flex-direction: column;
-        margin-top: 0%;
-      }
-      .im{
-        width: 50%;
-        height: 50%;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-       .border{ 
-        display: none;
-        width: 47%;
-        height: 33%;
-      } 
-      .im>img:hover{
-        margin-left: auto;
-        margin-top: auto;
-      }
-      .info{
-        height: auto;
-        padding: 0px 0px;
-        margin-top: 10%;
-      }
-      .para{
-        font-size: 20px;
-      }
-      .follow{
-        padding-top: 20px;
-        margin-bottom: 20px;
-        text-align: center;
-      }
-      #contact{
-          margin-top: 10%;
-          margin-bottom: 50%;
-      }
-      .con{
-          margin-top: 12.4%;
-          font-size: 48px;
-      }
-      .f{
-          margin-top: 5%;
-        width: 70%;
-      }
-      .in,.msg{
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 16px;
-        padding-left: 5px;
-      }
-      label{
-        font-size: 20px;
-        margin-bottom: 4px;
-      }
-      .f > div{
-        margin: 10px 0px;
-      }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .para{
-    font-size: 16px;
+@media only screen and (max-width:1024px) {
+  .navbar {
+    height: 40px;
   }
-  .con {
-    margin-top: 27%;
+  nav ul {
+    width: 100%;
+    background: linear-gradient(#ff54a2, #ff575a);
+    position: absolute;
+    top: 35px;
+    right: 0;
+    z-index: 2;
   }
-  .f {
-    margin-top: -2%;
-    }
-  #contact {
-    margin-top: 8%;
-    margin-bottom: 16%;
- }
-}
-@media only screen and (min-device-width: 411px) and (max-device-width: 411px) {
-  .con {
-    margin-top: 15%;
+  .vi {
+    font-size: 15px;
   }
-  #contact {
-    margin-top: 8%;
-    margin-bottom: 37%;
-}
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 375px) {
-  .con {
-    margin-top: 23%;
-   }
-   #contact {
-    margin-top: 8%;
-    margin-bottom: 22%;
-   }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 768px) {
-  .para {
-    font-size: 38px;
-   }
-   .con {
-    margin-top: 34.4%;
-    font-size: 92px;
-}
-}
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) {
-  .my-name{
-    text-align: center;
-    font-size: 60px;
-    bottom: 12%;
+  nav ul li {
+    display: block;
+    margin-top: 10px;
   }
-  .ms{
-    font-size: 100px;
-    margin-bottom: 50px;
-    margin-top: 7%;
+  nav ul li a {
+    color: #fff;
+    font-size: 14px;
+  }
+  .m:hover {
+    border-bottom: none;
+  }
+  #menu-icon {
+    display: block;
+  }
+  #menulist {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .navicon {
+    height: 30px;
+  }
+  #home {
+    background: url(img/mobile.jpeg)no-repeat center center/cover;
+  }
+  .my-name {
+    display: none;
+  }
+  .pname {
+    color: white;
+    font-size: 23px;
+    display: block;
+    position: absolute;
+    width: 290px;
+    height: 150px;
+    bottom: 0px;
+    right: 25%;
+    left: 50%;
+    margin-left: -150px;
   }
   .skills {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 38px;
-  }
-  #skill p {
-    font-size: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .iconp {
-  height: 50px;
-  } 
-  .about {
-    font-size: 100px;
-   }
-   .para {
-    font-size: 47px;
-     }
-   .info {
-      margin-top: -4%;
-  }
-  .follow a {
-    border-radius: 100px;
-   }
-   .fa {
-    width: 54px;
     height: 20px;
-    text-align: center;
-    text-decoration: none;
-    padding: 60px 47px;
   }
-   .con {
-  margin-top: 24.4%;
-  font-size: 100px;
+  .lang {
+    margin: 0px 4%;
   }
-  .f {
-    margin-top: 0%;
-    width: 65%;
-  }
-  label {
-    font-size: 25px;
-    margin-bottom: 19px;
-  }
-  .in, .msg {
-    width: 100%;
-    padding-top: 13px;
-    padding-bottom: 14px;
+  #skill p {
     font-size: 30px;
-    padding-left: 5px;
   }
-}
-@media only screen and (min-device-width: 200px) and (max-device-width: 320px) {
-  .my-name{
-    left: 10%;
-    font-size: 21px;
-    bottom: 15%;
-  }
-  .ms{
-    font-size: 50px;
+  .ms {
+    font-size: 60px;
     margin-bottom: 26px;
     margin-top: 5%;
   }
-  .about{
-    font-size: 50px;
+  .about {
+    margin-top: 50px;
+    font-size: 60px;
   }
-  .para{
-    font-size: 16px;
+  .am {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .im>img {
+    display: flex;
+    height: 284px;
+    width: 276px;
+    margin: auto;
+    margin-top: 25px;
+  }
+  .info {
+    justify-content: center;
+    margin-left: 0px;
+    margin: auto;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .para {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .follow {
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  /* contact page */
+  #contact {
+    margin-top: 30px;
   }
   .con {
-    margin-top: 33%;
+    margin-top: 0;
     font-size: 50px;
   }
-  #contact {
-    margin-top: 0%;
-    margin-bottom: 0%;
+  .f {
+    margin-top: 20px;
+    width: 75%;
   }
-.f {
-  margin-top: -10%;
+  .in, .msg {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    padding-left: 5px;
+  }
+  label {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  .f>div {
+    margin: 10px 0px;
   }
 }
