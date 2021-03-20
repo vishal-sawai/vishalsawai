@@ -42,7 +42,7 @@
   }
   .pname {
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     display: block;
     position: absolute;
     width: 290px;
@@ -52,10 +52,7 @@
     left: 50%;
     margin-left: -150px;
   }
-  .skills {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
+  /* skill */
   .iconp {
     height: 20px;
   }
@@ -80,8 +77,8 @@
   }
   .im>img {
     display: flex;
-    height: 284px;
-    width: 276px;
+    height: 216px;
+    width: 200px;
     margin: auto;
     margin-top: 25px;
   }
@@ -93,6 +90,7 @@
     margin-top: 20px;
   }
   .para {
+    padding: 0px 20px;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }

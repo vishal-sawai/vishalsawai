@@ -90,9 +90,10 @@ nav ul li a:hover {
 }
 
 /* skill */
-
 #skill {
   background-color: white;
+  padding-top: 52px;
+  margin-bottom: -50px;
 }
 
 .ms {
@@ -117,7 +118,6 @@ nav ul li a:hover {
 
 .skills {
   text-align: right;
-  padding-top: 10px;
   padding-bottom: 10px;
   color: white;
   padding-right: 5px;
@@ -181,7 +181,9 @@ nav ul li a:hover {
 }
 
 /* about */
-
+#abu{
+  padding-top: 65px;
+}
 #about {
   display: flex;
   margin: auto;
@@ -189,7 +191,6 @@ nav ul li a:hover {
 
 .about {
   font-family: 'Barrio', cursive;
-  margin-top: 50px;
   font-size: 60px;
   text-align: center;
 }
@@ -207,7 +208,6 @@ nav ul li a:hover {
 .info {
   justify-content: center;
   margin-left: 30px;
-  /* height: 206px; */
   padding: 88px 0px;
 }
 
@@ -218,7 +218,7 @@ nav ul li a:hover {
 
 /* font icon */
 .follow{
-  width: 251px;
+  width: 100%;
 }
 .fa {
   width: 45px;
@@ -226,6 +226,10 @@ nav ul li a:hover {
   text-align: center;
   text-decoration: none;
   padding: 17px 1px;
+  margin: auto;
+}
+.fm{
+  display: flex;
   margin: auto;
 }
 
