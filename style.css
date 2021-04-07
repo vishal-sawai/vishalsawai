@@ -16,6 +16,9 @@
   background-size: 150px 150px;
   z-index: 1;
 }
+#navmenu{
+  display: none;
+}
 
 /* navbar */
 
