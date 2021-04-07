@@ -1,3 +1,10 @@
+
+var loadi = document.getElementById("loading");
+function loadfun() {
+    loadi.style.display = 'none';
+}
+
+
 //nav Toggle
 var menulist = document.getElementById("menulist");
 menulist.style.maxHeight = "0px";

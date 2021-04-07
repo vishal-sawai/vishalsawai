@@ -6,6 +6,17 @@
   margin: 0px;
 }
 
+/* loading */
+
+#loading{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url('img/Bean\ Eater-1s-200px.svg') no-repeat center;
+  background-size: 150px 150px;
+  z-index: 1;
+}
+
 /* navbar */
 
 .container {
@@ -244,11 +255,6 @@ nav ul li a:hover {
 
 .fa-linkedin {
   background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
   color: white;
 }
 
