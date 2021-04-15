@@ -36,24 +36,20 @@
   }
   .pname {
     color: white;
-    font-size: 20px;
+    font-size: 89px;
     display: block;
     position: absolute;
-    width: 290px;
-    height: 150px;
-    bottom: 0px;
-    right: 25%;
-    left: 50%;
-    margin-left: -150px;
+    /* width: 290px;
+    height: 150px; */
+    bottom: 45px;
+    /* right: 25%; */
+    /* left: 50%; */
+    /* margin-left: -150px; */
   }
   .about {
     margin-top: 50px;
     font-size: 60px;
   }
-  /* .am {
-    flex-direction: column;
-    margin-top: 5px;
-  } */
   .im>img {
     display: flex;
     height: 216px;
