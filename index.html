@@ -2,35 +2,30 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>vishal sawai</title>
     <!-- Css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="animation.css">
-    <!-- font icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body onload="loadfun()">
 
     <div id="loading"></div>
-    
+
     <div class="container" id="navmenu">
         <div class="navbar">
-            <img src="img/iconnew.jpg" class="navicon">
-            <h2 class="vi">vishal sawai</h2>
             <nav>
                 <ul id="menulist">
                     <li class="m"><a href="#home">Home</a></li>
-                    <li class="m"><a href="#skill">Skill</a></li>
+                    <li class="m"><a href="#project">project</a></li>
                     <li class="m"><a href="#abu">About</a></li>
                     <li class="m"><a href="#contact">Contact</a></li>
                 </ul>
@@ -53,50 +48,23 @@
             </center>
         </div>
     </div>
-    <!-- skill -->
-    <div id="skill">
-        <h1 class="ms">My Skills</h1>
-        <div class="lang">
-            <p><img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-                    class="iconp" /> HTML</p>
-            <div class="prog">
-                <div class="skills html">90%</div>
-            </div>
 
-            <p><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-                    class="iconp" /> CSS</p>
-            <div class="prog">
-                <div class="skills css">80%</div>
-            </div>
+    <div id="project">
+        <h1 class="mp">My project</h1>
+        <div id="project-section">
+            <div class="wrapper">
+                <div class="prev-btn fa fa-angle-left"></div>
+                <div id="project-imghead" class="slides-container">
 
-            <p><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
-                    class="iconp" /> JavaScript</p>
-            <div class="prog">
-                <div class="skills js">70%</div>
-            </div>
-            <p><img src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png"
-                    class="iconp" /> JQuery</p>
-            <div class="prog">
-                <div class="skills jquery">80%</div>
-            </div>
-            <p><img src="https://hackr.io/tutorials/c/logo-c.svg?ver=1553674176" class="iconp" /> C</p>
-            <div class="prog">
-                <div class="skills c">80%</div>
-            </div>
-            <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" class="iconp" /> C++
-            </p>
-            <div class="prog">
-                <div class="skills cpp">80%</div>
-            </div>
-            <p><img src="https://avatars0.githubusercontent.com/u/1525981?s=200&v=4" class="iconp" />Python</p>
-            <div class="prog">
-                <div class="skills python">30%</div>
+                </div>
+                <div class="next-btn fa fa-angle-right"></div>
             </div>
         </div>
     </div>
+
     <!-- about -->
     <h1 class="about" id="abu">About Me</h1>
-    <div id="about"> 
+    <div id="about">
         <div class="am">
             <div class="im">
 
@@ -112,13 +80,13 @@
                 </p>
                 <div class="follow">
                     <div class="fm">
-                    <a href="https://github.com/Vishal-Sawai" target="_blank" class="fa fa-github"></a>
-                    <a href="https://twitter.com/vishaldnynasha1?fbclid=IwAR3cs00VJD_vJn1h3TnR6IBhtpeIcuDXAngJ8o-IseG33gX41oE09cQJHe8"
-                        target="_blank" class="fa fa-twitter"></a>
-                    <a href="https://www.linkedin.com/in/vishal-sawai-5462b9186/" target="_blank"
-                        class="fa fa-linkedin"></a>
-                    <a href="https://www.instagram.com/Vishal_sawai_/?fbclid=IwAR3cs00VJD_vJn1h3TnR6IBhtpeIcuDXAngJ8o-IseG33gX41oE09cQJHe8"
-                        target="_blank" class="fa fa-instagram"></a>
+                        <a href="https://github.com/Vishal-Sawai" target="_blank" class="fa fa-github"></a>
+                        <a href="https://twitter.com/vishaldnynasha1?fbclid=IwAR3cs00VJD_vJn1h3TnR6IBhtpeIcuDXAngJ8o-IseG33gX41oE09cQJHe8"
+                            target="_blank" class="fa fa-twitter"></a>
+                        <a href="https://www.linkedin.com/in/vishal-sawai-5462b9186/" target="_blank"
+                            class="fa fa-linkedin"></a>
+                        <a href="https://www.instagram.com/Vishal_sawai_/?fbclid=IwAR3cs00VJD_vJn1h3TnR6IBhtpeIcuDXAngJ8o-IseG33gX41oE09cQJHe8"
+                            target="_blank" class="fa fa-instagram"></a>
                     </div>
                 </div>
             </div>
@@ -138,38 +106,40 @@
                 </div>
                 <div>
                     <label>E-mail</label><br>
-                    <input class="in" name="email" id="email" placeholder="Eg. exmple@email.com" type="email" required />
+                    <input class="in" name="email" id="email" placeholder="Eg. exmple@email.com" type="email"
+                        required />
                 </div>
                 <div>
                     <label>Message</label><br>
-                    <textarea rows="5" name="message" id="message" placeholder="Write Your Message" class="msg" required></textarea>
+                    <textarea rows="5" name="message" id="message" placeholder="Write Your Message" class="msg"
+                        required></textarea>
                 </div><br>
-                    <button type="submit" class="send">Send</button>
-            </form> 
+                <button type="submit" class="send">Send</button>
+            </form>
             <br><br><br><br>
         </center>
     </div>
     <footer class="text-center">Copyright &copy;vishalsawai 2021</footer>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first --> 
-<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script> 
-<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
-<script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-      apiKey: "AIzaSyDh7Yz4Zr02xNxhS9xngxogHpO2XZ5MjFs",
-      authDomain: "vishal-sawai.firebaseapp.com",
-      projectId: "vishal-sawai",
-      storageBucket: "vishal-sawai.appspot.com",
-      messagingSenderId: "434001729051",
-      appId: "1:434001729051:web:288f4030ba2bda08858abe",
-      measurementId: "G-P0HWXLVTQC"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  </script>
-<script type="text/javascript" src="script.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDh7Yz4Zr02xNxhS9xngxogHpO2XZ5MjFs",
+            authDomain: "vishal-sawai.firebaseapp.com",
+            projectId: "vishal-sawai",
+            storageBucket: "vishal-sawai.appspot.com",
+            messagingSenderId: "434001729051",
+            appId: "1:434001729051:web:288f4030ba2bda08858abe",
+            measurementId: "G-P0HWXLVTQC"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 

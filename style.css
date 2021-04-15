@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap');
 * {
   padding: 0px;
   margin: 0px;
@@ -8,15 +9,16 @@
 
 /* loading */
 
-#loading{
+#loading {
   position: fixed;
   width: 100%;
   height: 100vh;
   background: #fff url('img/Bean\ Eater-1s-200px.svg') no-repeat center;
   background-size: 150px 150px;
-  z-index: 1;
+  z-index: 100;
 }
-#navmenu{
+
+#navmenu {
   display: none;
 }
 
@@ -33,7 +35,7 @@
   height: 70px;
   align-items: center;
   background-color: rgb(6, 130, 179);
-  z-index: 1;
+  z-index: 80;
 }
 
 #menu-icon {
@@ -62,21 +64,6 @@ nav ul li a:hover {
   color: rgb(102, 0, 0)
 }
 
-.navicon {
-  border: 2px solid black;
-  height: 50px;
-  border-radius: 100px;
-  margin-left: 4%;
-  cursor: pointer;
-}
-
-.vi {
-  font-size: 30px;
-  color: white;
-  border-bottom: solid 5px white;
-  display: none;
-}
-
 /* home section */
 
 #home {
@@ -92,7 +79,8 @@ nav ul li a:hover {
   font-size: 50px;
   bottom: 39%;
 }
-.pname{
+
+.pname {
   display: none;
 }
 
@@ -102,15 +90,15 @@ nav ul li a:hover {
   animation: abomination1 7.5s linear infinite;
   animation-fill-mode: forwards;
 }
+/* My Project */
 
-/* skill */
-#skill {
+#project {
   background-color: white;
   padding-top: 52px;
   margin-bottom: -50px;
-}
+} 
 
-.ms {
+.mp {
   text-align: center;
   font-size: 60px;
   color: brown;
@@ -118,86 +106,81 @@ nav ul li a:hover {
   font-family: 'Barrio', cursive;
 }
 
-.prog {
+/* slider */
+
+#ph{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Spectral SC', serif;
+  margin-top: 10px;
+  color: rgb(138, 0, 208);
+} 
+
+
+.wrapper {
   width: 100%;
-  background-color: black;
-  border-radius: 20px;
-  margin: 10px 0px;
-  font-weight: bolder;
+  overflow: hidden;
 }
 
-.lang {
-  margin: 0px 15%;
+.slides-container {
+  height: 570px;
+  transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
+  position: relative;
 }
 
-.skills {
-  text-align: right;
-  padding-bottom: 10px;
-  color: white;
-  padding-right: 5px;
+.slide-image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
-.iconp {
-  height: 30px;
+.slide-image img {
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  width: 932px;
+  height: 450px;
+  border: 3px solid darkblue;
+  padding: 10px;
+  object-fit: cover;
+}
+.next-btn,
+.prev-btn {
+  background: #eee;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  z-index: 70;
+  cursor: pointer;
+  transition: 400ms;
 }
 
-#skill p {
-  font-size: 43px;
+.next-btn:hover,
+.prev-btn:hover {
+  background: #48f9ff;
 }
 
-.html {
-  width: 90%;
-  background-color: blue;
-  border-radius: 20px;
-  animation: html 3s linear 1;
+.prev-btn {
+  position: relative;
+  left: 14%;
+  top: 250px;
 }
 
-.css {
-  width: 80%;
-  background-color: darkred;
-  border-radius: 20px;
-  animation: css 3s linear 1;
-}
-
-.js {
-  width: 70%;
-  background-color: grey;
-  border-radius: 20px;
-  animation: js 3s linear 1;
-}
-
-.jquery {
-  width: 80%;
-  background-color: yellowgreen;
-  border-radius: 20px;
-  animation: jquery 3s linear 1;
-}
-
-.c {
-  width: 80%;
-  background-color: deepskyblue;
-  border-radius: 20px;
-  animation: c 3s linear 1;
-}
-
-.cpp {
-  width: 80%;
-  background-color: forestgreen;
-  border-radius: 20px;
-  animation: cpp 3s linear 1;
-}
-
-.python {
-  width: 30%;
-  background-color: rgba(255, 255, 0, 0.815);
-  border-radius: 20px;
-  animation: python 3s linear 1;
+.next-btn {
+  position: relative;
+  bottom: 368px;
+  float: right;
+  right: 14%;
 }
 
 /* about */
-#abu{
+
+#abu {
   padding-top: 65px;
 }
+
 #about {
   display: flex;
   margin: auto;
@@ -214,11 +197,13 @@ nav ul li a:hover {
   margin: auto;
   margin-top: 50px;
 }
+
 .im>img {
   height: 400px;
   width: 350px;
   border: 1px solid black;
 }
+
 .info {
   justify-content: center;
   margin-left: 30px;
@@ -231,9 +216,11 @@ nav ul li a:hover {
 }
 
 /* font icon */
-.follow{
+
+.follow {
   width: 100%;
 }
+
 .fa {
   width: 45px;
   height: 13px;
@@ -242,7 +229,8 @@ nav ul li a:hover {
   padding: 17px 1px;
   margin: auto;
 }
-.fm{
+
+.fm {
   display: flex;
   margin: auto;
 }
@@ -283,7 +271,7 @@ nav ul li a:hover {
 
 .con {
   font-family: 'Barrio', cursive;
-  margin-top: 50px;
+  margin-top: 133px;
   font-size: 60px;
 }
 
@@ -291,7 +279,7 @@ nav ul li a:hover {
   width: 500px;
 }
 
- .in, .msg {
+.in, .msg {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -325,9 +313,10 @@ label {
   margin: 10px 0px;
 }
 
- footer {
+footer {
   text-align: center;
   color: white;
   font-size: 20px;
   background-color: rgb(9, 149, 204);
 }
+

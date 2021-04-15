@@ -10,9 +10,6 @@
     right: 0;
     z-index: 2;
   }
-  .vi {
-    font-size: 15px;
-  }
   nav ul li {
     display: block;
     margin-top: 10px;
@@ -30,9 +27,6 @@
   #menulist {
     overflow: hidden;
     transition: 0.5s;
-  }
-  .navicon {
-    height: 30px;
   }
   #home {
     background: url(img/mobile.jpeg)no-repeat center center/cover;
@@ -98,7 +92,6 @@
     margin: auto;
     margin-top: 20px;
   }
-
   /* contact page */
   #contact {
     margin-top: 30px;
@@ -124,5 +117,47 @@
   }
   .f>div {
     margin: 10px 0px;
+  }
+  /* project */
+
+  
+#project {
+  background-color: white;
+  padding-top: 52px;
+  margin-bottom: -50px;
+} 
+
+.mp {
+  text-align: center;
+  font-size: 60px;
+  color: brown;
+  margin-top: 20px;
+  font-family: 'Barrio', cursive;
+}
+
+/* slider */
+
+#ph{
+  font-size: 45px;
+} 
+
+.slides-container {
+  height: 475px;
+}
+
+.slide-image img {  
+  margin-top: -7px;
+  width: 780px;
+  height: 381px;
+  padding: 21px;
+}
+  .prev-btn {
+    left: 1%;
+    top: 218px;
+  }
+  
+  .next-btn {
+    left: -1%;
+    bottom: 305px;
   }
 }
