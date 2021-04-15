@@ -46,29 +46,14 @@
     left: 50%;
     margin-left: -150px;
   }
-  /* skill */
-  .iconp {
-    height: 20px;
-  }
-  .lang {
-    margin: 0px 4%;
-  }
-  #skill p {
-    font-size: 30px;
-  }
-  .ms {
-    font-size: 60px;
-    margin-bottom: 26px;
-    margin-top: 5%;
-  }
   .about {
     margin-top: 50px;
     font-size: 60px;
   }
-  .am {
+  /* .am {
     flex-direction: column;
     margin-top: 5px;
-  }
+  } */
   .im>img {
     display: flex;
     height: 216px;
@@ -85,7 +70,7 @@
   }
   .para {
     padding: 0px 20px;
-    font-size: 12px;
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .follow {
