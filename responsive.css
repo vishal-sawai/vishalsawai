@@ -36,15 +36,10 @@
   }
   .pname {
     color: white;
-    font-size: 89px;
+    font-size: 85px;
     display: block;
     position: absolute;
-    /* width: 290px;
-    height: 150px; */
-    bottom: 45px;
-    /* right: 25%; */
-    /* left: 50%; */
-    /* margin-left: -150px; */
+    bottom: 100px;
   }
   .about {
     margin-top: 50px;

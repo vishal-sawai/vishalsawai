@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 * {
   padding: 0px;
   margin: 0px;
@@ -16,6 +17,9 @@
   background: #fff url('img/Bean\ Eater-1s-200px.svg') no-repeat center;
   background-size: 150px 150px;
   z-index: 100;
+}
+.d-block{
+  font-family: 'Quicksand', sans-serif;
 }
 
 #navmenu {
