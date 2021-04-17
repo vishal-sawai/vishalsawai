@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
@@ -23,6 +25,7 @@
 }
 
 #navmenu {
+  font-family: 'Work Sans', sans-serif;
   display: none;
 }
 
@@ -296,6 +299,7 @@ label {
   float: left;
   font-size: 25px;
   margin-bottom: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .send {

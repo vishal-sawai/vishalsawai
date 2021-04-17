@@ -1,12 +1,12 @@
 @media only screen and (max-width:1024px) {
   .navbar {
-    height: 40px;
+    height: 110px;
   }
   nav ul {
     width: 100%;
     background: linear-gradient(#ff54a2, #ff575a);
     position: absolute;
-    top: 35px;
+    top: 109px;
     right: 0;
     z-index: 2;
   }
@@ -16,13 +16,18 @@
   }
   nav ul li a {
     color: #fff;
-    font-size: 14px;
+    font-size: 48px;
   }
   .m:hover {
     border-bottom: none;
   }
   #menu-icon {
     display: block;
+    margin: 5px 20px;
+    height: 70px;
+  }
+  .m {
+    margin: 15px 6px;
   }
   #menulist {
     overflow: hidden;
@@ -81,57 +86,51 @@
     width: 75%;
   }
   .in, .msg {
-    width: 100%;
+    width: 98%;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 13px;
+    font-size: 26px;
     padding-left: 5px;
+    height: 50px;
+    outline: 0;
   }
   label {
-    font-size: 15px;
-    margin-bottom: 4px;
+    font-size: 30px;
+    margin-bottom: 7px;
   }
   .f>div {
     margin: 10px 0px;
   }
   /* project */
-
-  
-#project {
-  background-color: white;
-  padding-top: 52px;
-  margin-bottom: -50px;
-} 
-
-.mp {
-  text-align: center;
-  font-size: 60px;
-  color: brown;
-  margin-top: 20px;
-  font-family: 'Barrio', cursive;
-}
-
-/* slider */
-
-#ph{
-  font-size: 45px;
-} 
-
-.slides-container {
-  height: 475px;
-}
-
-.slide-image img {  
-  margin-top: -7px;
-  width: 780px;
-  height: 381px;
-  padding: 21px;
-}
+  #project {
+    background-color: white;
+    padding-top: 52px;
+    margin-bottom: -50px;
+  }
+  .mp {
+    text-align: center;
+    font-size: 60px;
+    color: brown;
+    margin-top: 20px;
+    font-family: 'Barrio', cursive;
+  }
+  /* slider */
+  #ph {
+    font-size: 45px;
+  }
+  .slides-container {
+    height: 475px;
+  }
+  .slide-image img {
+    margin-top: -7px;
+    width: 780px;
+    height: 381px;
+    padding: 21px;
+  }
   .prev-btn {
     left: 1%;
     top: 218px;
   }
-  
   .next-btn {
     left: -1%;
     bottom: 305px;
