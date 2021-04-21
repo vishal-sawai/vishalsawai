@@ -151,9 +151,13 @@ nav ul li a:hover {
   width: 932px;
   height: 450px;
   border: 3px solid darkblue;
-  padding: 10px;
+  padding: 5px;
   object-fit: cover;
 }
+.slide-image img:hover{
+  filter: brightness(0.8);
+}
+
 .next-btn,
 .prev-btn {
   background: #eee;
