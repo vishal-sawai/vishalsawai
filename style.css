@@ -28,6 +28,13 @@
 .myinfo{
     font-family: 'Open Sans Condensed', sans-serif;
 }
+.pro-btn:hover{
+    background-color: rgba(255, 255, 255, 0.768);
+    /* border-color: rgb(83, 83, 255); */
+    color: darkblue;
+    transition: 0.3s;
+}
+/* contact */
 .f-form{
     width: 500px;
 }
@@ -41,7 +48,7 @@
 .c-d h3{
     color: darkblue;
 }
-.c-d img:hover{
+.c-social img:hover{
     border-radius: 7px;
     background-color:white;
     filter: drop-shadow(5px 5px 5px rgba(122, 122, 255, 0.925));
