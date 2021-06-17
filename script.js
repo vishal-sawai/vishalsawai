@@ -1,154 +1,98 @@
-
-var loadi = document.getElementById("loading");
-var navmenu = document.getElementById("navmenu");
-function loadfun() {
-    loadi.style.display = 'none';
-    navmenu.style.display = 'block';
-}
-
-
-//nav Toggle
-var menulist = document.getElementById("menulist");
-menulist.style.maxHeight = "0px";
-function togglemenu() {
-    if (menulist.style.maxHeight == "0px") {
-        menulist.style.maxHeight = "300px";
+var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+  
+  TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+  
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
-    else {
-        menulist.style.maxHeight = "0px";
+  
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  
+    var that = this;
+    var delta = 300 - Math.random() * 100;
+  
+    if (this.isDeleting) { delta /= 2; }
+  
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
     }
-}
+  
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+  
+  window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+  };
+  
 
-//firebase
+
+  // Firebase
+      // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDh7Yz4Zr02xNxhS9xngxogHpO2XZ5MjFs",
+      authDomain: "vishal-sawai.firebaseapp.com",
+      projectId: "vishal-sawai",
+      storageBucket: "vishal-sawai.appspot.com",
+      messagingSenderId: "434001729051",
+      appId: "1:434001729051:web:288f4030ba2bda08858abe",
+      measurementId: "G-P0HWXLVTQC"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    
 var db = firebase.firestore();
 
 document.getElementById('contactForm').addEventListener('submit', storeData);
 
 function storeData(e) {
-    e.preventDefault();
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-
-    db.collection("Messages").doc(name).set({
-        email: email,
-        message: message
-    })
-        .then(function () {
-            alert('Thank you!  ' + name + ' 🙏');
-            document.getElementById('contactForm').reset();
-        })
-        .catch(function (error) {
-            console.error("Error writing doc", error);
-        });
-
-}
-
-//Project
-
-SelectAllData();
-
-function SelectAllData() {
-
-    var vi = db.collection("Project");
-
-    vi.get().then((snapshot) => {
-        const p = [];
-        snapshot.forEach((doc) => {
-            const data = doc.data();
-            p.push(data);
-        });
-        p.map((vishal) => {
-            var pname = vishal.ProjectName;
-            var plink = vishal.ProjectLink;
-            var ilink = vishal.Link;
-            Add(pname, plink, ilink);
-
-        });
-    }).catch((error) => {
-        // An error happened.
-        alert("Error: " + error);
-    });
-    var stdNo = 0;
-
-    function Add(pname, plink, ilink) {
-
-        var pimgg = new Image();
-        pimgg.src = ilink;
-
-        pimgg.onclick = function () {
-            window.location.href = plink;
-        };
-        var mdiv = document.getElementById("project-imghead");
-        var pdiv = document.createElement("div");
-        pdiv.setAttribute("id", "pdiv1");
-        pdiv.setAttribute("class", "slide-image");
-
-        mdiv.appendChild(pdiv);
-        pdiv.appendChild(pimgg);
-
-        var z = document.createElement('h1');
-        z.setAttribute("id", "ph");
-        z.innerHTML = pname;
-        pdiv.appendChild(z);
-
-
-
-        // slider code
-
-        const slideImage = document.querySelectorAll(".slide-image");
-        const slidesContainer = document.querySelector(".slides-container");
-        const nextBtn = document.querySelector(".next-btn");
-        const prevBtn = document.querySelector(".prev-btn");
-
-        let numberOfImages = slideImage.length;
-        let slidewidth = slideImage[0].clientWidth;
-        let currentSlide = 0;
-
-        //    set up the slider
-
-        function init() {
-
-            slideImage.forEach((img, i) => {
-                img.style.left = i * 100 + "%";
-            });
-        }
-
-        init();
-
-        // next button
-
-        nextBtn.addEventListener("click", () => {
-
-            if (currentSlide >= numberOfImages - 1) {
-                goToSlide(0);
-                return;
-            }
-
-            currentSlide++;
-            goToSlide(currentSlide);
-        });
-
-        prevBtn.addEventListener("click", () => {
-
-            if (currentSlide <= 0 ) {
-                goToSlide(numberOfImages - 1);
-                return;
-            }
-
-            currentSlide--;
-            goToSlide(currentSlide);
-        });
-
-
-        function goToSlide(slideNumber) {
-            slidesContainer.style.transform = "translateX(-" + slidewidth * slideNumber + "px)";
-            
-            currentSlide = slideNumber;
-        }
-          
-    }
+ e.preventDefault();
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+ 
+     db.collection("Messages").doc(name).set({
+         email:email,
+         message:message
+     })
+     .then(function() {
+         alert('Thank you!  ' + name + " 🙏");
+         document.getElementById('contactForm').reset();
+     })
+     .catch(function(error) {
+        console.error("Error writing doc", error);
+     });
 
 }
-
-
