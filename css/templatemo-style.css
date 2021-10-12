@@ -134,7 +134,7 @@ body {
   height: 100vh;
 }
 
-#bg:after {
+body:after {
   content: '';
   opacity: 0.75;
   background: #4096ee;
