@@ -52,7 +52,7 @@ body {
 /* Home */
 #home {
     font-family: 'Raleway', sans-serif;
-    background: linear-gradient(rgba(0, 102, 255, 0.522), rgba(4, 17, 255, 0.796)), url("./images/bg.jpg");
+    background: linear-gradient(rgba(0, 102, 255, 0.522), rgba(4, 17, 255, 0.796)), url("../images/bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
