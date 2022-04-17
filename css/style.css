@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.Heading {
+    text-align: center;
+    color: rgb(31, 23, 75);
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Navbar */
+.navbar div {
+    background-color: white;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar nav {
+    display: flex;
+    float: right;
+    margin: 22px 100px 29px 0px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 29px 40px;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: #c1ff45;
+    transition: 0.5s;
+}
+
+/* Home */
+#home {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(rgba(0, 102, 255, 0.522), rgba(4, 17, 255, 0.796)), url(/images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.NameDiv {
+    width: 90%;
+    margin: auto;
+    color: white;
+    padding-top: 15%;
+    font-weight: bolder;
+}
+
+.MyName h1, h2 {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.MyName h2 {
+    font-size: 50px;
+    color: #c1ff45;
+}
+
+.MyName h1 {
+    font-size: 140px;
+}
+
+.sub {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgba(255, 234, 234, 0.796);
+}
+
+/* About */
+#About {
+    margin: auto;
+    background-color: white;
+    width: 95%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.aboutMe {
+    width: 70%;
+    margin: auto;
+    padding: 60px 20px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgb(229, 219, 219);
+}
+
+.myImg img {
+    border: 20px solid rgb(91, 126, 21);
+    height: 300px;
+    border-radius: 50%;
+}
+
+.aboutInfo {
+    font-size: 25px;
+    word-spacing: 5px;
+    margin: 40px 0px;
+    margin-left: 30px;
+    padding: 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.aboutInfo p {
+    margin-bottom: 20px;
+}
+
+.aboutInfo a {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 5px 40px;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+
+.aboutInfo a:hover {
+    background-color: blueviolet;
+}
+
+.project-btn {
+    background-color: darkred !important;
+}
+
+.project-btn:hover {
+    background-color: rgba(139, 0, 0, 0.762) !important;
+}
+
+/* contact */
+#Contact {
+    margin: auto;
+    background-color: white;
+    width: 95%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contactMe {
+    width: 75%;
+    margin: auto;
+    padding: 40px 80px;
+    display: flex;
+}
+
+.contact-card {
+    font-size: 20px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(229, 219, 219);
+    margin: 40px 30px;
+}
+
+.contact-card i {
+    margin-right: 10px;
+    font-size: 50px;
+    color: darkblue;
+}
+
+.social-media p {
+    display: flex;
+    margin: auto;
+}
+
+.social-media a {
+    margin: auto;
+}
+
+.social-media i {
+    color: darkred;
+}
+
+.social-media i:hover {
+    color: red;
+}
+
+.contact-form {
+    margin: 30px 10px;
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(229, 219, 219);
+}
+
+.form-item label {
+    font-size: 25px;
+}
+
+.form-item input, textarea {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 30px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.form-item textarea {
+    max-width: 400px;
+    min-width: 400px;
+}
+
+.btn {
+    width: 420px;
+    color: white;
+    background-color: darkgreen;
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* footer */
+footer {
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    padding: 20px 0px;
+    color: darkblue;
+    font-size: 20px;
+}

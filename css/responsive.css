@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1227px) {
+
+    /* navbar */
+    .navbar {
+        display: none;
+    }
+
+    /* heading */
+    .Heading {
+        font-size: 30px;
+        padding-top: 35px;
+        padding-bottom: 0px;
+    }
+
+    /* Home */
+    #home {
+        height: 100vh;
+    }
+
+    .NameDiv {
+        padding-top: 50%;
+    }
+
+    .MyName h2 {
+        font-size: 35px;
+    }
+
+    .MyName h1 {
+        font-size: 70px;
+    }
+
+    /* About */
+
+    .aboutMe {
+        width: 92%;
+        padding: 60px 20px;
+        display: block;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 5px rgb(229, 219, 219);
+    }
+
+    .myImg img {
+        border: 20px solid rgb(91, 126, 21);
+        height: 300px;
+        border-radius: 50%;
+        display: flex;
+        margin: auto;
+    }
+
+    .aboutInfo {
+        font-size: 20px;
+        word-spacing: 0px;
+        margin: 22px 0px;
+        margin-left: 0px;
+        padding: 20px 6px;
+        font-weight: lighter;
+    }
+
+    .aboutInfo p {
+        margin-bottom: 20px;
+    }
+
+    .aboutInfo a {
+        padding: 5px 20px;
+    }
+
+
+    /* contact */
+    .contactMe {
+        width: 100%;
+        padding: 0px 0px;
+        display: block;
+    }
+
+    .contact-form {
+        padding: 40px 40px;
+        margin: 30px 25px;
+    }
+
+    .form-item input, textarea {
+        margin-top: 8px;
+        margin-bottom: 10px;
+        width: 90%;
+        height: 90%;
+        padding: 9px 0px;
+    }
+
+    .form-item textarea {
+        max-width: 90%;
+        min-width: 90%;
+    }
+
+    .btn {
+        width: 90%;
+        height: 50px;
+    }
+
+    /* footer */
+    footer {
+        font-size: 15px;
+    }
+
+}
