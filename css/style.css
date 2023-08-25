@@ -8,47 +8,6 @@ body {
     background-color: #283747;
 }
 
-.Heading {
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    text-transform: uppercase;
-    padding-top: 10px;
-    padding-bottom: 2 0px;
-    font-weight: bolder;
-    font-family: 'Raleway', sans-serif;
-}
-
-/* Navbar */
-.navbar div {
-    background-color: white;
-    width: 100%;
-    height: 75px;
-    position: fixed;
-    font-family: 'Raleway', sans-serif;
-}
-
-.navbar nav {
-    display: flex;
-    float: right;
-    margin: 22px 100px 29px 0px;
-}
-
-.navbar li {
-    list-style: none;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: black;
-    padding: 29px 40px;
-    font-size: 20px;
-}
-
-.navbar a:hover {
-    background-color: #c1ff45;
-    transition: 0.5s;
-}
 
 /* Home */
 #home {
@@ -58,14 +17,27 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    display: flex;
 }
 
 .NameDiv {
     width: 90%;
     margin: auto;
     color: white;
-    padding-top: 15%;
     font-weight: bolder;
+}
+
+.imgDiv {
+    height: 200px;
+    width: 200px;
+    margin: 15px auto;
+}
+
+.imgDiv img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .MyName h1, h2 {
@@ -75,141 +47,39 @@ body {
 }
 
 .MyName h2 {
-    font-size: 50px;
+    font-size: 20px;
     color: #c1ff45;
 }
 
 .MyName h1 {
-    font-size: 140px;
+    font-size: 40px;
 }
 
 .sub {
     text-align: center;
-    text-transform: uppercase;
-    font-weight: bolder;
-    color: rgba(255, 234, 234, 0.796);
-}
-
-/* Technology */
-.tech-main {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    background-color: white;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    padding: 20px;
-}
-
-.tech-font {
-    margin: auto;
-    font-size: 45px;
-    width: 100px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.html-icon {
-    color: #CA6F1E;
-}
-
-.css-icon {
-    color: #884EA0;
-}
-
-.js-icon {
-    color: #F1C40F;
-}
-
-.bs-icon {
-    color: blue;
-}
-
-.php-icon {
-    color: #76448A;
-}
-
-.database-icon {
-    color: #7B7D7D;
-}
-
-.react-icon {
-    color: #5DADE2;
-}
-
-.java-icon {
-    color: #62ff00;
-}
-
-/* About */
-#About {
-    margin: auto;
-    width: 80%;
-    background-color: #172d45;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    color: white;
-    border-radius: 20px;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-}
-
-.about-main {
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.about1 {
-    padding: 100px 80px 80px 80px;
-    background-color: #172d45;
-}
-
-.about2 {
-    float: right;
-}
-
-.about1 p {
-    font-size: 20px;
-    font-family: 'Mulish', sans-serif;
-    margin-bottom: 25px;
-}
-
-.about2 img {
-    height: 600px;
-    float: right;
-}
-
-.About-Heading {
-    margin-bottom: 15px;
-}
-
-.About-Heading2 {
-    color: yellow;
-    margin-bottom: 5px;
-    font-size: 30px;
-
+    margin-top: 20px;
 }
 
 .resume-btn {
+    font-size: 20px;
+    color: white;
     text-decoration: none;
+    border: 1px solid;
     padding: 10px 20px;
-    font-weight: bold;
-    color: black;
-    border-radius: 20px;
-    border: 1px solid white;
-    color: yellow;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: normal;
 }
 
 .resume-btn:hover {
-    background-color: white;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.178);
+    border: none;
 }
 
+/* media Link */
 .media-link {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 25px;
     width: 200px;
     display: flex;
@@ -220,85 +90,22 @@ body {
     margin: auto;
     text-decoration: none;
     color: white;
-    border-radius: 50px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 1ms;
 }
 
 .linkedin-font:hover {
+    background-color: white;
     color: blue;
 }
 
 .twitter-font:hover {
+    background-color: white;
     color: rgb(147, 147, 255);
 }
 
 .github-font:hover {
-    color: red;
-}
-
-/* Contact */
-#Contact {
-    margin: 50px 0px;
-}
-
-.contact {
-    display: flex;
-    width: 75%;
-    margin: auto;
-    flex-wrap: wrap;
-    font-family: 'Mulish', sans-serif;
-    margin-top: 30px;
-}
-
-.contact-cards {
-    text-decoration: none;
     background-color: white;
-    font-weight: bold;
-    border-radius: 20px;
-    margin: auto;
-    margin-top: 10px;
-    width: 350px;
-    display: flex;
-}
-
-.contact-cards-div {
-    display: flex;
-    margin: auto;
-    padding: 30px 50px;
-}
-
-.contact-card1 {
-    padding: 0px 10px;
-    font-size: 30px;
-    color: blue;
-}
-
-.contact-card2 {
-    padding: 8px 5px;
-    font-size: 15px;
     color: black;
-}
-
-.whatsapp-font {
-    color: #25D366;
-}
-
-.instagram-font {
-    color: red;
-}
-
-.contact-cards:hover {
-    filter: brightness(0.5);
-}
-
-
-/* footer */
-footer {
-    width: 100%;
-    margin: auto;
-    background-color: white;
-    text-align: center;
-    padding: 10px 0px;
-    color: #283747;
-    font-size: 15px;
-
 }
