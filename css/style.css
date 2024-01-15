@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+body {
+    background-color: #283747;
+}
+
+
+/* Home */
+#home {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(rgba(0, 102, 255, 0.522), rgba(4, 17, 255, 0.796)), url("../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+}
+
+.NameDiv {
+    width: 90%;
+    margin: auto;
+    color: white;
+    font-weight: bolder;
+}
+
+.imgDiv {
+    height: 200px;
+    width: 200px;
+    margin: 15px auto;
+}
+
+.imgDiv img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.MyName h1, h2 {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.MyName h2 {
+    font-size: 20px;
+    color: #c1ff45;
+}
+
+.MyName h1 {
+    font-size: 40px;
+}
+
+.sub {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.resume-btn {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.resume-btn:hover {
+    background-color: rgba(255, 255, 255, 0.178);
+    border: none;
+}
+
+/* media Link */
+.media-link {
+    margin: auto;
+    margin-top: 30px;
+    font-size: 25px;
+    width: 200px;
+    display: flex;
+}
+
+.media-link a {
+    cursor: pointer;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 1ms;
+}
+
+.linkedin-font:hover {
+    background-color: white;
+    color: blue;
+}
+
+.twitter-font:hover {
+    background-color: white;
+    color: rgb(147, 147, 255);
+}
+
+.github-font:hover {
+    background-color: white;
+    color: black;
+}
